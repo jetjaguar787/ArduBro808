@@ -33,8 +33,7 @@ const unsigned char RBUTTON[] PROGMEM  = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x
 };
 
 //Sounds?
-const uint16_t note[] PROGMEM = {
-  NOTE_FS1,107, NOTE_C4,500, TONES_END
+const uint16_t note[] PROGMEM = {500, TONES_END
 };
 
 
@@ -85,7 +84,6 @@ case GAME:
   sound.tones(note);
   }else{
   arduboy.drawBitmap(0, 0, rested, 128, 64, WHITE); 
-  sound.tones(note);
   }
   break;
   }
